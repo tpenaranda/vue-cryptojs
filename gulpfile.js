@@ -1,6 +1,6 @@
 const gulp = require('gulp')
 const babel = require('gulp-babel')
-const uglify = require('gulp-uglifyjs')
+const uglify = require('gulp-uglify')
 const rename = require('gulp-rename')
 
 gulp.task('default', () => {

@@ -18,6 +18,11 @@ var VueCryptojs = {
         get: function get() {
           return _cryptoJs["default"];
         }
+      },
+      $CryptoJS: {
+        get: function get() {
+          return _cryptoJs["default"];
+        }
       }
     });
 
