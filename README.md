@@ -18,11 +18,11 @@ This wrapper bind `CryptoJS` to `Vue` or `this` if you're using single file comp
 
 You can use `crypto-js` like this:
 ```js
-Vue.CryptoJS.HmacSHA1('Signature','Message')
+Vue.CryptoJS.HmacSHA1('Message','Key')
 
-this.CryptoJS.HmacSHA1('Signature','Message')
+this.CryptoJS.HmacSHA1('Message','Key')
 
-this.$CryptoJS.HmacSHA1('Signature','Message')
+this.$CryptoJS.HmacSHA1('Message','Key')
 ```
 
 Please kindly check full documention of [crypto-js](https://github.com/brix/crypto-js)
