@@ -16,13 +16,17 @@ Vue.use(VueCryptojs)
 ## Usage:
 This wrapper bind `CryptoJS` to `Vue` or `this` if you're using single file component.
 
-You can use `crypto-js` like this:
+Simple AES text encrypt/decrypt example:
 ```js
-Vue.CryptoJS.HmacSHA1('Message','Key')
+const encryptedText = this.CryptoJS.AES.encrypt("Hi There!", "Secret Passphrase").toString()
+const decryptedText = this.CryptoJS.AES.decrypt(encryptedText, "Secret Passphrase").toString(this.CryptoJS.enc.Utf8)
+```
 
-this.CryptoJS.HmacSHA1('Message','Key')
-
-this.$CryptoJS.HmacSHA1('Message','Key')
+Also `crypto-js` is available as:
+```js
+Vue.CryptoJS
+this.CryptoJS
+this.$CryptoJS
 ```
 
 Please kindly check full documention of [crypto-js](https://github.com/brix/crypto-js)
