@@ -8,8 +8,11 @@
     "build": "node_modules/gulp/bin/gulp.js"
   },
   "keywords": [
-    "vue",
+    "crypto",
     "crypto-js",
+    "encrypt",
+    "vue",
+    "vuejs",
     "wrapper"
   ],
   "repository": {
