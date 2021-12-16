@@ -1,5 +1,5 @@
 # vue-cryptojs
-A small wrapper for integrating crypto-js into VueJS v3 and VueJS v2
+A small wrapper for integrating crypto-js into Vue3 and Vue2
 
 ## How to install:
 ```bash
@@ -8,15 +8,15 @@ npm install vue-cryptojs
 
 And in your entry file:
 ```js
-// VueJS v3
+// Vue3
 import { createApp } from 'vue'
 import VueCryptojs from 'vue-cryptojs'
 
-const app = createApp(<YourComponent>)
+const app = createApp(...)
 app.use(VueCryptojs)
 app.mount('#app')
 
-// VueJS v2
+// Vue2
 import Vue from 'vue'
 import VueCryptojs from 'vue-cryptojs'
 
@@ -31,7 +31,7 @@ const encryptedText = this.$CryptoJS.AES.encrypt("Hi There!", "Secret Passphrase
 const decryptedText = this.$CryptoJS.AES.decrypt(encryptedText, "Secret Passphrase").toString(this.CryptoJS.enc.Utf8)
 ```
 
-For VueJS v3 we suggest to use `inject` on Composition API:
+For Vue3 we suggest to use `inject` on Composition API:
 ```js
 <script>
 import { inject } from 'vue'
