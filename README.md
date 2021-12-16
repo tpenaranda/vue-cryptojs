@@ -12,9 +12,7 @@ And in your entry file:
 import { createApp } from 'vue'
 import VueCryptojs from 'vue-cryptojs'
 
-const app = createApp(...)
-app.use(VueCryptojs)
-app.mount('#app')
+createApp(...).use(VueCryptojs).mount(...)
 
 // Vue2
 import Vue from 'vue'
@@ -29,6 +27,15 @@ Simple AES text encrypt/decrypt example:
 ```js
 const encryptedText = this.$CryptoJS.AES.encrypt("Hi There!", "Secret Passphrase").toString()
 const decryptedText = this.$CryptoJS.AES.decrypt(encryptedText, "Secret Passphrase").toString(this.CryptoJS.enc.Utf8)
+```
+
+Directly on a template:
+```js
+<template>
+  <img alt="Vue logo" src="./assets/logo.png" />
+  <HelloWorld msg="Hello Vue 3 + Vite" />
+  {{ $CryptoJS.AES.encrypt("Hi There!", "Secret Passphrase").toString() }}
+</template>
 ```
 
 For Vue3 we suggest to use `inject` on Composition API:
