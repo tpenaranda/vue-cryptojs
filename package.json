@@ -1,6 +1,6 @@
 {
   "name": "vue-cryptojs",
-  "version": "2.1.6",
+  "version": "2.2.0",
   "description": "A small wrapper for integrating crypto-js into VueJS",
   "main": "dist/vue-cryptojs.min.js",
   "scripts": {
@@ -27,7 +27,7 @@
   "devDependencies": {
     "@babel/core": "^7.10.5",
     "@babel/preset-env": "^7.10.4",
-    "gulp": "^4.0.0",
+    "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^3.0.2",
