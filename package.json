@@ -5,7 +5,7 @@
   "main": "dist/vue-cryptojs.min.js",
   "scripts": {
     "test": "node --experimental-modules test/index.mjs",
-    "build": "node_modules/gulp/bin/gulp.js"
+    "build": "npx babel ./src/index.mjs --out-file ./dist/vue-cryptojs.es5.js --presets=@babel/env && npx babel ./src/index.mjs --out-file ./dist/vue-cryptojs.min.js --presets=@babel/env,minify"
   },
   "keywords": [
     "crypto",
@@ -25,12 +25,10 @@
     "vue": ">= 2.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.10.5",
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.2",
     "@babel/preset-env": "^7.10.4",
-    "gulp": "^4.0.2",
-    "gulp-babel": "^8.0.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-uglify": "^3.0.2",
+    "babel-preset-minify": "^0.5.2",
     "vue": "^2.6.11"
   },
   "dependencies": {
