@@ -26,7 +26,7 @@ This wrapper bind `CryptoJS` to `Vue` or `this` if you're using single file comp
 Simple AES text encrypt/decrypt example:
 ```js
 const encryptedText = this.$CryptoJS.AES.encrypt("Hi There!", "Secret Passphrase").toString()
-const decryptedText = this.$CryptoJS.AES.decrypt(encryptedText, "Secret Passphrase").toString(this.CryptoJS.enc.Utf8)
+const decryptedText = this.$CryptoJS.AES.decrypt(encryptedText, "Secret Passphrase").toString(this.$CryptoJS.enc.Utf8)
 ```
 
 Directly on a template:
