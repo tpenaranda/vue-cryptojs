@@ -1,6 +1,6 @@
 {
   "name": "vue-cryptojs",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "A small wrapper for integrating crypto-js into VueJS",
   "main": "dist/vue-cryptojs.min.js",
   "scripts": {
