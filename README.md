@@ -55,8 +55,8 @@ import VueCryptojs from 'vue-cryptojs'
 
 Vue.use(VueCryptojs)
 ```
-## Usage:
-This wrapper bind `CryptoJS` to `Vue` or `this` if you're using single file component.
+
+This binds `CryptoJS` to `Vue` or `this` if you're using single file component.
 
 Simple AES text encrypt/decrypt example:
 ```js
