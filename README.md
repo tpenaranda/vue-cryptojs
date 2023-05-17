@@ -6,15 +6,50 @@ A small wrapper for integrating crypto-js into Vue3 and Vue2
 npm install vue-cryptojs
 ```
 
-And in your entry file:
+### Vue3
+Entry file:
 ```js
-// Vue3
+
 import { createApp } from 'vue'
 import VueCryptojs from 'vue-cryptojs'
 
 createApp(...).use(VueCryptojs).mount(...)
+```
 
-// Vue2
+TS Component:
+```js
+<script setup lang="ts">
+  import { inject } from 'vue'
+  import CryptoJS from 'crypto-js'
+
+  const cryptojs = inject('cryptojs') as typeof CryptoJS
+</script>
+
+<template>
+  <p>{{cryptojs.AES.encrypt("Hi There!", "Secret Passphrase").toString()}}</p>
+  <p>{{cryptojs.AES.decrypt("U2FsdGVkX1/zclTGSirKJ+oYxGJFRR96i9MkjOb8X0s=", "Secret Passphrase").toString(cryptojs.enc.Utf8)}}</p>
+</template>
+```
+
+`inject` on Composition API without TS:
+```js
+<script>
+import { inject } from 'vue'
+
+export default {
+  setup() {
+    const cryoptojs = inject('cryptojs')
+
+    return {
+      cryoptojs
+    }
+  }
+}
+</script>
+```
+
+### Vue2
+```js
 import Vue from 'vue'
 import VueCryptojs from 'vue-cryptojs'
 
@@ -38,21 +73,6 @@ Directly on a template:
 </template>
 ```
 
-For Vue3 we suggest to use `inject` on Composition API:
-```js
-<script>
-import { inject } from 'vue'
-
-export default {
-  setup() {
-    const cryoptojs = inject('cryptojs')
-
-    return {
-      cryoptojs
-    }
-  }
-}
-</script>
 
 ```
 
