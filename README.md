@@ -73,7 +73,4 @@ Directly on a template:
 </template>
 ```
 
-
-```
-
 Please kindly check full documention of [crypto-js](https://github.com/brix/crypto-js)
