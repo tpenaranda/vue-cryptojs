@@ -42,5 +42,4 @@ var VueCryptojs = {
     }
   }
 };
-var _default = VueCryptojs;
-exports["default"] = _default;
+var _default = exports["default"] = VueCryptojs;
