@@ -1,6 +1,12 @@
 # vue-cryptojs
 A small wrapper for integrating crypto-js into Vue3 and Vue2
 
+## Discontinued
+
+Active development of Vue-CryptoJS has been discontinued. This library is no longer maintained.
+
+Nowadays, NodeJS and modern browsers have a native `Crypto` module. The latest version of CryptoJS already uses the native Crypto module for random number generation, since `Math.random()` is not crypto-safe. Further development of CryptoJS would result in it only being a wrapper of native Crypto. Therefore, development and maintenance has been discontinued, it is time to go for the native `crypto` module.
+
 ## How to install:
 ```bash
 npm install vue-cryptojs

@@ -12,4 +12,5 @@ const test = new Vue({
     }
   }
 })
+
 test.run()
