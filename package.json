@@ -25,9 +25,9 @@
     "vue": ">= 2.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.17.10",
-    "@babel/core": "^7.18.2",
-    "@babel/preset-env": "^7.10.4",
+    "@babel/cli": "^8.0.1",
+    "@babel/core": "^8.0.1",
+    "@babel/preset-env": "^8.0.2",
     "babel-preset-minify": "^0.5.2",
     "vue": "^3.5.29"
   },
